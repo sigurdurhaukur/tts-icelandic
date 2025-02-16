@@ -5,6 +5,7 @@ conda activate fish-speech
 # Install pytorch
 pip3 install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1
 
+
 # (Ubuntu / Debian User) Install sox + ffmpeg
 apt install libsox-dev ffmpeg 
 
@@ -24,3 +25,6 @@ cd fish-speech
 
 # Install fish-speech
 pip3 install -e .[stable]
+
+# if you encounter an error with pyaudio, first install portaudio19-dev
+# sudo apt-get install portaudio19-dev
